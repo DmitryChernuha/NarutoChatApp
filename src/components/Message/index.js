@@ -14,7 +14,7 @@ const Message = ({ message }) => {
         <View style={[
             styles.container,
             {
-                backgroundColor: isMyMessage() ? '#1EE90A' : '#fff',
+                backgroundColor: isMyMessage() ? 'rgba(238,184,113,0.95)' : '#fff',
                 alignSelf: isMyMessage() ? 'flex-end' : 'flex-start',
             },
         ]}
@@ -28,12 +28,20 @@ const Message = ({ message }) => {
 
 const styles = StyleSheet.create({
     container: {
-        // backgroundColor: '#fff',
-        // alignSelf: 'flex-start',
+
         margin: 5,
         padding: 10,
         borderRadius: 10,
-        maxWidth: '80%'
+        maxWidth: '80%',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 1,
+        },
+        shadowOpacity: 0.18,
+        shadowRadius: 1.0,
+
+        elevation: 5,
     },
     time: {
         color: 'gray',
