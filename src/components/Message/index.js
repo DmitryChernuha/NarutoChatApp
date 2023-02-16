@@ -14,7 +14,7 @@ const Message = ({ message }) => {
         <View style={[
             styles.container,
             {
-                backgroundColor: isMyMessage() ? 'rgba(238,184,113,0.95)' : '#fff',
+                backgroundColor: isMyMessage() ? '#DCF8C5' : '#fff',
                 alignSelf: isMyMessage() ? 'flex-end' : 'flex-start',
             },
         ]}
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.18,
         shadowRadius: 1.0,
 
-        elevation: 5,
+        elevation: 15,
     },
     time: {
         color: 'gray',
